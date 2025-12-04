@@ -1,0 +1,107 @@
+
+✨  Synthesis time: 44.38s
+
+EventApiStack: start: Building 7ee35f5bfee8c887fdef1a6c0b0adbd241bf1526de07d982364aa7d0bbed29e2
+EventApiStack: success: Built 7ee35f5bfee8c887fdef1a6c0b0adbd241bf1526de07d982364aa7d0bbed29e2
+EventApiStack: start: Building e52cf8eb2c381d9236835ed802c6edaae2f50d3ed6eeda8f830b2523ba8a202e
+EventApiStack: success: Built e52cf8eb2c381d9236835ed802c6edaae2f50d3ed6eeda8f830b2523ba8a202e
+EventApiStack: start: Publishing 7ee35f5bfee8c887fdef1a6c0b0adbd241bf1526de07d982364aa7d0bbed29e2:current_account-current_region
+EventApiStack: start: Publishing e52cf8eb2c381d9236835ed802c6edaae2f50d3ed6eeda8f830b2523ba8a202e:current_account-current_region
+EventApiStack: success: Published e52cf8eb2c381d9236835ed802c6edaae2f50d3ed6eeda8f830b2523ba8a202e:current_account-current_region
+EventApiStack: success: Published 7ee35f5bfee8c887fdef1a6c0b0adbd241bf1526de07d982364aa7d0bbed29e2:current_account-current_region
+EventApiStack: deploying... [1/1]
+EventApiStack: creating CloudFormation changeset...
+EventApiStack |  0/20 | 1:31:32 AM | REVIEW_IN_PROGRESS   | AWS::CloudFormation::Stack  | EventApiStack User Initiated
+EventApiStack |  0/20 | 1:31:39 AM | CREATE_IN_PROGRESS   | AWS::CloudFormation::Stack  | EventApiStack User Initiated
+EventApiStack |  0/20 | 1:31:41 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::RestApi    | EventApi (EventApiE141E6C0) 
+EventApiStack |  0/20 | 1:31:42 AM | CREATE_IN_PROGRESS   | AWS::CDK::Metadata          | CDKMetadata/Default (CDKMetadata) 
+EventApiStack |  0/20 | 1:31:42 AM | CREATE_IN_PROGRESS   | AWS::IAM::Role              | EventApi/CloudWatchRole (EventApiCloudWatchRoleFC289E58) 
+EventApiStack |  0/20 | 1:31:42 AM | CREATE_IN_PROGRESS   | AWS::IAM::Role              | EventApiFunction/ServiceRole (EventApiFunctionServiceRole8F24145E) 
+EventApiStack |  0/20 | 1:31:42 AM | CREATE_IN_PROGRESS   | AWS::DynamoDB::Table        | EventsTable (EventsTableD24865E5) 
+EventApiStack |  0/20 | 1:31:42 AM | CREATE_IN_PROGRESS   | AWS::IAM::Role              | EventApiFunction/ServiceRole (EventApiFunctionServiceRole8F24145E) Resource creation Initiated
+EventApiStack |  0/20 | 1:31:43 AM | CREATE_IN_PROGRESS   | AWS::CDK::Metadata          | CDKMetadata/Default (CDKMetadata) Resource creation Initiated
+EventApiStack |  0/20 | 1:31:43 AM | CREATE_IN_PROGRESS   | AWS::IAM::Role              | EventApi/CloudWatchRole (EventApiCloudWatchRoleFC289E58) Resource creation Initiated
+EventApiStack |  0/20 | 1:31:43 AM | CREATE_IN_PROGRESS   | AWS::DynamoDB::Table        | EventsTable (EventsTableD24865E5) Resource creation Initiated
+EventApiStack |  1/20 | 1:31:43 AM | CREATE_COMPLETE      | AWS::CDK::Metadata          | CDKMetadata/Default (CDKMetadata) 
+EventApiStack |  1/20 | 1:31:43 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::RestApi    | EventApi (EventApiE141E6C0) Resource creation Initiated
+EventApiStack |  2/20 | 1:31:44 AM | CREATE_COMPLETE      | AWS::ApiGateway::RestApi    | EventApi (EventApiE141E6C0) 
+EventApiStack |  2/20 | 1:31:45 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Resource   | EventApi/Default/{proxy+} (EventApiproxy6B408659) 
+EventApiStack |  2/20 | 1:31:45 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/OPTIONS (EventApiOPTIONSBEA18F5B) 
+EventApiStack |  2/20 | 1:31:46 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/OPTIONS (EventApiOPTIONSBEA18F5B) Resource creation Initiated
+EventApiStack |  2/20 | 1:31:46 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Resource   | EventApi/Default/{proxy+} (EventApiproxy6B408659) Resource creation Initiated
+EventApiStack |  3/20 | 1:31:47 AM | CREATE_COMPLETE      | AWS::ApiGateway::Resource   | EventApi/Default/{proxy+} (EventApiproxy6B408659) 
+EventApiStack |  3/20 | 1:31:47 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/{proxy+}/OPTIONS (EventApiproxyOPTIONSCB20BD47) 
+EventApiStack |  3/20 | 1:31:48 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/{proxy+}/OPTIONS (EventApiproxyOPTIONSCB20BD47) Resource creation Initiated
+EventApiStack |  4/20 | 1:31:48 AM | CREATE_COMPLETE      | AWS::ApiGateway::Method     | EventApi/Default/OPTIONS (EventApiOPTIONSBEA18F5B) 
+EventApiStack |  5/20 | 1:31:50 AM | CREATE_COMPLETE      | AWS::ApiGateway::Method     | EventApi/Default/{proxy+}/OPTIONS (EventApiproxyOPTIONSCB20BD47) 
+EventApiStack |  6/20 | 1:31:56 AM | CREATE_COMPLETE      | AWS::DynamoDB::Table        | EventsTable (EventsTableD24865E5) 
+EventApiStack |  7/20 | 1:31:59 AM | CREATE_COMPLETE      | AWS::IAM::Role              | EventApi/CloudWatchRole (EventApiCloudWatchRoleFC289E58) 
+EventApiStack |  8/20 | 1:31:59 AM | CREATE_COMPLETE      | AWS::IAM::Role              | EventApiFunction/ServiceRole (EventApiFunctionServiceRole8F24145E) 
+EventApiStack |  8/20 | 1:32:00 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Account    | EventApi/Account (EventApiAccount4C5A3346) 
+EventApiStack |  8/20 | 1:32:00 AM | CREATE_IN_PROGRESS   | AWS::IAM::Policy            | EventApiFunction/ServiceRole/DefaultPolicy (EventApiFunctionServiceRoleDefaultPolicyDE5FD32A) 
+EventApiStack |  8/20 | 1:32:01 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Account    | EventApi/Account (EventApiAccount4C5A3346) Resource creation Initiated
+EventApiStack |  8/20 | 1:32:02 AM | CREATE_IN_PROGRESS   | AWS::IAM::Policy            | EventApiFunction/ServiceRole/DefaultPolicy (EventApiFunctionServiceRoleDefaultPolicyDE5FD32A) Resource creation Initiated
+EventApiStack |  9/20 | 1:32:02 AM | CREATE_COMPLETE      | AWS::ApiGateway::Account    | EventApi/Account (EventApiAccount4C5A3346) 
+EventApiStack | 10/20 | 1:32:17 AM | CREATE_COMPLETE      | AWS::IAM::Policy            | EventApiFunction/ServiceRole/DefaultPolicy (EventApiFunctionServiceRoleDefaultPolicyDE5FD32A) 
+EventApiStack | 10/20 | 1:32:18 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Function       | EventApiFunction (EventApiFunction62370C94) 
+EventApiStack | 10/20 | 1:32:21 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Function       | EventApiFunction (EventApiFunction62370C94) Resource creation Initiated
+EventApiStack | 10/20 | 1:32:22 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Function       | EventApiFunction (EventApiFunction62370C94) Eventual consistency check initiated
+EventApiStack | 10/20 | 1:32:23 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/{proxy+}/ANY/ApiPermission.Test.EventApiStackEventApiA4516265.ANY..{proxy+} (EventApiproxyANYApiPermissionTestEventApiStackEventApiA4516265ANYproxyC9DA6FC1) 
+EventApiStack | 10/20 | 1:32:23 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/ANY (EventApiANYCD9181DA) 
+EventApiStack | 10/20 | 1:32:23 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/ANY/ApiPermission.Test.EventApiStackEventApiA4516265.ANY.. (EventApiANYApiPermissionTestEventApiStackEventApiA4516265ANY6726CD1E) 
+EventApiStack | 10/20 | 1:32:23 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/{proxy+}/ANY (EventApiproxyANYD3F0DE89) 
+EventApiStack | 10/20 | 1:32:23 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/ANY (EventApiANYCD9181DA) Resource creation Initiated
+EventApiStack | 10/20 | 1:32:23 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/{proxy+}/ANY/ApiPermission.Test.EventApiStackEventApiA4516265.ANY..{proxy+} (EventApiproxyANYApiPermissionTestEventApiStackEventApiA4516265ANYproxyC9DA6FC1) Resource creation Initiated
+EventApiStack | 10/20 | 1:32:24 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/ANY/ApiPermission.Test.EventApiStackEventApiA4516265.ANY.. (EventApiANYApiPermissionTestEventApiStackEventApiA4516265ANY6726CD1E) Resource creation Initiated
+EventApiStack | 10/20 | 1:32:24 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Method     | EventApi/Default/{proxy+}/ANY (EventApiproxyANYD3F0DE89) Resource creation Initiated
+EventApiStack | 11/20 | 1:32:24 AM | CREATE_COMPLETE      | AWS::Lambda::Permission     | EventApi/Default/ANY/ApiPermission.Test.EventApiStackEventApiA4516265.ANY.. (EventApiANYApiPermissionTestEventApiStackEventApiA4516265ANY6726CD1E) 
+EventApiStack | 12/20 | 1:32:24 AM | CREATE_COMPLETE      | AWS::Lambda::Permission     | EventApi/Default/{proxy+}/ANY/ApiPermission.Test.EventApiStackEventApiA4516265.ANY..{proxy+} (EventApiproxyANYApiPermissionTestEventApiStackEventApiA4516265ANYproxyC9DA6FC1) 
+EventApiStack | 13/20 | 1:32:25 AM | CREATE_COMPLETE      | AWS::ApiGateway::Method     | EventApi/Default/ANY (EventApiANYCD9181DA) 
+EventApiStack | 14/20 | 1:32:26 AM | CREATE_COMPLETE      | AWS::ApiGateway::Method     | EventApi/Default/{proxy+}/ANY (EventApiproxyANYD3F0DE89) 
+EventApiStack | 15/20 | 1:32:27 AM | CREATE_COMPLETE      | AWS::Lambda::Function       | EventApiFunction (EventApiFunction62370C94) 
+EventApiStack | 15/20 | 1:32:28 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Deployment | EventApi/Deployment (EventApiDeployment40983326fee75cd25ea5779cdd17e5bc18512d1f) 
+EventApiStack | 15/20 | 1:32:29 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Deployment | EventApi/Deployment (EventApiDeployment40983326fee75cd25ea5779cdd17e5bc18512d1f) Resource creation Initiated
+EventApiStack | 16/20 | 1:32:30 AM | CREATE_COMPLETE      | AWS::ApiGateway::Deployment | EventApi/Deployment (EventApiDeployment40983326fee75cd25ea5779cdd17e5bc18512d1f) 
+EventApiStack | 16/20 | 1:32:30 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Stage      | EventApi/DeploymentStage.prod (EventApiDeploymentStageprodE43E9D26) 
+EventApiStack | 16/20 | 1:32:31 AM | CREATE_IN_PROGRESS   | AWS::ApiGateway::Stage      | EventApi/DeploymentStage.prod (EventApiDeploymentStageprodE43E9D26) Resource creation Initiated
+EventApiStack | 17/20 | 1:32:33 AM | CREATE_COMPLETE      | AWS::ApiGateway::Stage      | EventApi/DeploymentStage.prod (EventApiDeploymentStageprodE43E9D26) 
+EventApiStack | 17/20 | 1:32:34 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/{proxy+}/ANY/ApiPermission.EventApiStackEventApiA4516265.ANY..{proxy+} (EventApiproxyANYApiPermissionEventApiStackEventApiA4516265ANYproxy6C2EF407) 
+EventApiStack | 17/20 | 1:32:34 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/ANY/ApiPermission.EventApiStackEventApiA4516265.ANY.. (EventApiANYApiPermissionEventApiStackEventApiA4516265ANYF6B27C20) 
+EventApiStack | 17/20 | 1:32:35 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/{proxy+}/ANY/ApiPermission.EventApiStackEventApiA4516265.ANY..{proxy+} (EventApiproxyANYApiPermissionEventApiStackEventApiA4516265ANYproxy6C2EF407) Resource creation Initiated
+EventApiStack | 17/20 | 1:32:35 AM | CREATE_IN_PROGRESS   | AWS::Lambda::Permission     | EventApi/Default/ANY/ApiPermission.EventApiStackEventApiA4516265.ANY.. (EventApiANYApiPermissionEventApiStackEventApiA4516265ANYF6B27C20) Resource creation Initiated
+EventApiStack | 18/20 | 1:32:35 AM | CREATE_COMPLETE      | AWS::Lambda::Permission     | EventApi/Default/{proxy+}/ANY/ApiPermission.EventApiStackEventApiA4516265.ANY..{proxy+} (EventApiproxyANYApiPermissionEventApiStackEventApiA4516265ANYproxy6C2EF407) 
+EventApiStack | 19/20 | 1:32:36 AM | CREATE_COMPLETE      | AWS::Lambda::Permission     | EventApi/Default/ANY/ApiPermission.EventApiStackEventApiA4516265.ANY.. (EventApiANYApiPermissionEventApiStackEventApiA4516265ANYF6B27C20) 
+EventApiStack | 20/20 | 1:32:37 AM | CREATE_COMPLETE      | AWS::CloudFormation::Stack  | EventApiStack 
+
+ ✅  EventApiStack
+
+✨  Deployment time: 67.83s
+
+Outputs:
+EventApiStack.EventApiEndpoint7969D12A = https://my4s8zht11.execute-api.us-west-2.amazonaws.com/prod/
+Stack ARN:
+arn:aws:cloudformation:us-west-2:783764580472:stack/EventApiStack/94f8c5a0-d0a8-11f0-a73b-0a07a91b5fff
+
+✨  Total time: 112.21s
+
+
+NOTICES         (What's this? https://github.com/aws/aws-cdk/wiki/CLI-Notices)
+
+34892	CDK CLI will collect telemetry data on command usage starting at version 2.1100.0 (unless opted out)
+
+	Overview: We do not collect customer content and we anonymize the
+	          telemetry we do collect. See the attached issue for more
+	          information on what data is collected, why, and how to
+	          opt-out. Telemetry will NOT be collected for any CDK CLI
+	          version prior to version 2.1100.0 - regardless of
+	          opt-in/out. You can also preview the telemetry we will start
+	          collecting by logging it to a local file, by adding
+	          `--unstable=telemetry --telemetry-file=my/local/file` to any
+	          `cdk` command.
+
+	Affected versions: cli: ^2.0.0
+
+	More information at: https://github.com/aws/aws-cdk/issues/34892
+
+
+If you don’t want to see a notice anymore, use "cdk acknowledge <id>". For example, "cdk acknowledge 34892".
