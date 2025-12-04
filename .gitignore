@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# CDK
+cdk.out/
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies (keep only requirements.txt)
+backend/annotated_types/
+backend/anyio/
+backend/boto3/
+backend/botocore/
+backend/dateutil/
+backend/fastapi/
+backend/idna/
+backend/jmespath/
+backend/mangum/
+backend/pydantic/
+backend/pydantic_core/
+backend/s3transfer/
+backend/six.py
+backend/starlette/
+backend/typing_extensions.py
+backend/urllib3/
+backend/*.dist-info/
+
+# Keep only source files
+!backend/app.py
+!backend/requirements.txt
+!backend/docs/
