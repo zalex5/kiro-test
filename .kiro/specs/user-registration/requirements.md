@@ -86,17 +86,3 @@ WHEN a user requests their event list THEN the system SHALL include the registra
 WHEN a non-existent user requests their event list THEN the system SHALL return 404 Not Found.
 
 WHEN a user with no registrations requests their event list THEN the system SHALL return an empty array with 200 OK.
-
-## Non-Functional Requirements
-
-### Data Persistence
-All user and registration data must be persisted in DynamoDB with appropriate table design and indexes.
-
-### API Standards
-All endpoints must follow the API standards defined in .kiro/steering/api-standards.md including status codes, error formats, and response structures.
-
-### Error Handling
-The system must return appropriate HTTP status codes and provide clear error messages for validation failures and edge cases.
-
-### Performance
-Registration operations must complete within 3 seconds and support concurrent registrations with proper race condition handling.
